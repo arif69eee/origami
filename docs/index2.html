@@ -91,7 +91,7 @@
     <script src="webxr.js"></script>
 
 
-    <!-- three.js XR starts -->
+    <!-- three.js -->
 
     <script type="module">
 
@@ -213,9 +213,9 @@
             window.addEventListener( 'resize', onWindowResize );
 
             //
-
-            document.body.appendChild( VRButton.createButton( renderer ) );
-
+            const vrbtn = VRButton.createButton( renderer );
+            document.body.appendChild( vrbtn );
+            vrbtn.onclick();
         }
 
         function buildController( data ) {
@@ -351,7 +351,7 @@
 
     </script>
 
-    <!-- comb start -->
+    <!-- comb -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="comb/script.js"></script>
