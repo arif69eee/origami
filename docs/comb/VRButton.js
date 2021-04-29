@@ -57,7 +57,7 @@ class VRButton {
 
 			};
 
-			button.onclick = function () {
+			button.onclick = function () { alert("button.onclick = function ()");
 
 				if ( currentSession === null ) {
 
@@ -155,10 +155,6 @@ class VRButton {
 			message.style.left = 'calc(50% - 90px)';
 			message.style.width = '180px';
 			message.style.textDecoration = 'none';
-
-			message.onclick = function () {
-				alert("message.onclick = function ()");
-			};
 
 			stylizeElement( message );
 
