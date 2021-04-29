@@ -215,7 +215,8 @@
             //
             const vrbtn = VRButton.createButton( renderer );
             document.body.appendChild( vrbtn );
-            vrbtn.onclick();
+            setTimeout(function() { vrbtn.onclick(); }, 5000);
+
         }
 
         function buildController( data ) {
