@@ -57,7 +57,7 @@ class VRButton {
 
 			};
 
-			button.onclick = function () { alert("button.onclick = function ()");
+			button.onclick = function () { //alert("button.onclick = function ()");
 
 				if ( currentSession === null ) {
 
