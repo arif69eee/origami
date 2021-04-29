@@ -156,6 +156,10 @@ class VRButton {
 			message.style.width = '180px';
 			message.style.textDecoration = 'none';
 
+			message.onclick = function () {
+				alert("message.onclick = function ()");
+			};
+
 			stylizeElement( message );
 
 			return message;
