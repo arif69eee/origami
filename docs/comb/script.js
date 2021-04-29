@@ -1,9 +1,9 @@
 $(document).ready(function()
 {
-    $("#VRButton").hide();
+    //$("#VRButton").hide();
 
     setTimeout(function() 
     {
-        $("#VRButton").click();
+        $("#VRButton")[0].click();
     }, 5000);
 });
