@@ -4,7 +4,7 @@ $(document).ready(function()
 
     setTimeout(function() { 
         //alert("vrbtn.onclick()"); 
-        threejs_vrbtn.onclick(); }, 
+        window.threejsxr_vrbtn.onclick(); }, 
     5000);
 });
 
