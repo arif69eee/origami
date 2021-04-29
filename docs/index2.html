@@ -101,7 +101,8 @@
         import { VRButton } from './comb/VRButton.js';
         import { XRControllerModelFactory } from 'https://threejs.org/examples/jsm/webxr/XRControllerModelFactory.js';
 
-        var threejs_vrbtn = null;
+        window.threejsxr_vrbtn = null;
+
         const clock = new THREE.Clock();
 
         let container;
@@ -214,8 +215,8 @@
             window.addEventListener( 'resize', onWindowResize );
 
             //
-            threejs_vrbtn = VRButton.createButton( renderer );
-            document.body.appendChild( threejs_vrbtn );
+            window.threejsxr_vrbtn = VRButton.createButton( renderer );
+            document.body.appendChild( window.threejsxr_vrbtn );
 
         }
 
