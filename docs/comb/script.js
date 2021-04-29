@@ -2,10 +2,10 @@ $(document).ready(function()
 {
     //$("#VRButton").hide();
 
-    setTimeout(function() 
-    {
-        //toggleThreejsVR();
-    }, 5000);
+    setTimeout(function() { 
+        //alert("vrbtn.onclick()"); 
+        threejs_vrbtn.onclick(); }, 
+    5000);
 });
 
 
