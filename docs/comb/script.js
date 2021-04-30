@@ -15,6 +15,8 @@ $(document).ready(function()
         {
             window.threejsxr_vrbtn.onclick();
         }
+
+        setTimeout(trySwitchingThreejsUnityScene, 20000);
     }
 
     window.unityxr_onEndSession = function()
@@ -41,19 +43,16 @@ $(document).ready(function()
 
     $('#switch-scenes-btn').click(function()
     {
-        if(lastSceneClosed == "unityxr" || lastSceneClosed == "threejsxr")
+        if(lastSceneClosed == "unityxr")
         {
-            if(lastSceneClosed == "unityxr")
-            {
-                window.threejsxr_vrbtn.onclick();
-            }
-            else
-            {
-                window.xrManager.toggleVR();
-            }
-
-            setTimeout(trySwitchingThreejsUnityScene, 20000);
+            window.threejsxr_vrbtn.onclick();
+        }
+        else if(lastSceneClosed == "threejsxr")
+        {
+            window.xrManager.toggleVR();
         }
     });
+
+    trySwitchingThreejsUnityScene();
 
 });
