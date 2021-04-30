@@ -33,6 +33,8 @@ class VRButton {
 
 				currentSession = null;
 
+				// arif
+				window.threejsxr_onSessionEnded();
 			}
 
 			//
