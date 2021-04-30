@@ -19,12 +19,16 @@ $(document).ready(function()
 
     window.unityxr_onEndSession = function()
     {
-        setTimeout(window.threejsxr_vrbtn.onclick, 5000);
+        alert('window.unityxr_onEndSession = function()');
+        $("#VRButton").focus();
+        setTimeout(window.threejsxr_vrbtn.onclick, 7000);
     }
 
     window.threejsxr_onSessionEnded = function()
     {
-        setTimeout(window.xrManager.toggleVR, 5000);
+        alert('window.threejsxr_onSessionEnded = function()');
+        $("#VRButton").focus();
+        setTimeout(window.xrManager.toggleVR, 7000);
     }
 
     trySwitchingThreejsUnityScene();
