@@ -57,7 +57,7 @@ class VRButton {
 
 			};
 
-			button.onclick = function () { //alert("button.onclick = function ()");
+			button.onclick = function () {
 
 				if ( currentSession === null ) {
 
@@ -130,12 +130,9 @@ class VRButton {
 
 			navigator.xr.isSessionSupported( 'immersive-vr' ).then( function ( supported ) {
 
-				//supported ? showEnterVR() : showWebXRNotFound();
-				showEnterVR();
+				supported ? showEnterVR() : showWebXRNotFound();
 
 			} );
-
-			
 
 			return button;
 
@@ -161,16 +158,7 @@ class VRButton {
 
 			stylizeElement( message );
 
-			//return message;
-
-			button.id = 'VRButton';
-			button.style.display = 'none';
-
-			stylizeElement( button );
-			
-			showEnterVR();
-
-			return button;
+			return message;
 
 		}
 
