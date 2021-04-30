@@ -8,16 +8,25 @@ $(document).ready(function()
         if(window.xrManager.isInVRSession)
         {
             window.xrManager.toggleVR();
-            window.threejsxr_vrbtn.onclick();
         }
         else if(window.threejsxr_vrbtn.textContent == 'EXIT VR')
         {
             window.threejsxr_vrbtn.onclick();
-            window.xrManager.toggleVR();
         }
 
-        setTimeout(trySwitchingThreejsUnityScene, 5000);        
+        setTimeout(trySwitchingThreejsUnityScene, 15000);
+    }
+
+    window.unityxr_onEndSession = function()
+    {
+        window.threejsxr_vrbtn.onclick();
+    }
+
+    window.threejsxr_onSessionEnded = function()
+    {
+        window.xrManager.toggleVR();
     }
 
     trySwitchingThreejsUnityScene();
+
 });
