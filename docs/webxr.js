@@ -83,8 +83,10 @@
   
     XRManager.prototype.requestPresent = function () {
       if (!this.isVRSupported) return;
+      
       navigator.xr.requestSession('immersive-vr', {
-        requiredFeatures: ['local-floor']
+        //requiredFeatures: ['local-floor']
+        optionalFeatures: [ 'local-floor', 'bounded-floor', 'hand-tracking' ] // arif
       }).then(async (session) => {
         session.isImmersive = true;
         this.isInVRSession = true;
