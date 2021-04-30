@@ -27,6 +27,7 @@ $(document).ready(function()
         lastSceneClosed = "unityxr";
         $('#switch-scenes-btn').show();
         $("#VRButton").hide();
+        $("#enterxr").hide();
     }
 
     window.threejsxr_onSessionEnded = function()
@@ -37,6 +38,7 @@ $(document).ready(function()
         lastSceneClosed = "threejsxr";
         $('#switch-scenes-btn').show();
         $("#VRButton").hide();
+        $("#enterxr").hide();
     }
 
     $('#switch-scenes-btn').click(function()
