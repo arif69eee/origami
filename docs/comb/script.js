@@ -2,11 +2,9 @@ $(document).ready(function()
 {
     //$("#VRButton").hide();
 
-    setTimeout(function() { 
-        //alert("vrbtn.onclick()"); 
+    setTimeout(function() {
         //window.threejsxr_vrbtn.onclick(); 
-    }, 
-    5000);
+      }, 3000);
 });
 
 
