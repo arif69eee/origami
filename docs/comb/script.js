@@ -19,12 +19,12 @@ $(document).ready(function()
 
     window.unityxr_onEndSession = function()
     {
-        window.threejsxr_vrbtn.onclick();
+        setTimeout(window.threejsxr_vrbtn.onclick, 5000);
     }
 
     window.threejsxr_onSessionEnded = function()
     {
-        window.xrManager.toggleVR();
+        setTimeout(window.xrManager.toggleVR, 5000);
     }
 
     trySwitchingThreejsUnityScene();
