@@ -164,6 +164,8 @@ class VRButton {
 			button.style.display = 'none';
 
 			stylizeElement( button );
+			
+			showEnterVR();
 
 			return button;
 
