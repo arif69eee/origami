@@ -12,7 +12,7 @@
     outline: none;
     z-index: 1000;
     cursor: pointer;
-    left: calc(50% - 300px);
-    width: 600px;
+    left: calc(50% - 350px);
+    width: 700px;
     display: none;
 }
