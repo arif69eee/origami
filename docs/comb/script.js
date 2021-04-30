@@ -1,7 +1,7 @@
 $(document).ready(function()
 {
     //alert('$(document).ready(function()');
-    //$("#VRButton").hide();
+    $("#VRButton").hide();
 
     var lastSceneClosed = null;
 
@@ -26,6 +26,7 @@ $(document).ready(function()
         //setTimeout(function(){window.threejsxr_vrbtn.onclick();}, 7000);
         lastSceneClosed = "unityxr";
         $('#switch-scenes-btn').show();
+        $("#VRButton").hide();
     }
 
     window.threejsxr_onSessionEnded = function()
@@ -35,6 +36,7 @@ $(document).ready(function()
         //setTimeout(function(){window.xrManager.toggleVR();}, 7000);
         lastSceneClosed = "threejsxr";
         $('#switch-scenes-btn').show();
+        $("#VRButton").hide();
     }
 
     $('#switch-scenes-btn').click(function()
