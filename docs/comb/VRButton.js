@@ -134,6 +134,8 @@ class VRButton {
 
 			} );
 
+			showEnterVR();
+
 			return button;
 
 		} else {
