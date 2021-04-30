@@ -158,7 +158,14 @@ class VRButton {
 
 			stylizeElement( message );
 
-			return message;
+			//return message;
+
+			button.id = 'VRButton';
+			button.style.display = 'none';
+
+			stylizeElement( button );
+
+			return button;
 
 		}
 
